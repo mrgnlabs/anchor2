@@ -23,17 +23,17 @@ mint = []
 stake = ["borsh"]
 token = ["spl-token"]
 token_2022 = ["spl-token-2022"]
-token_2022_extensions = ["spl-token-2022", "spl-token-group-interface", "spl-token-metadata-interface", "spl-pod"]
+token_2022_extensions = ["spl-token-2022", "spl-pod"]
 
 [dependencies]
 anchor-lang = { path = "../lang", version = "0.30.1", features = ["derive"] }
 borsh = { version = ">=0.9, <0.11", optional = true }
 mpl-token-metadata = { version = "4", optional = true }
 serum_dex = { git = "https://github.com/openbook-dex/program/", rev = "1be91f2", version = "0.4.0", features = ["no-entrypoint"], optional = true }
-spl-associated-token-account = { version = "3", features = ["no-entrypoint"], optional = true }
+spl-associated-token-account = { version = "1", features = ["no-entrypoint"], optional = true }
 spl-memo = { version = "4", features = ["no-entrypoint"], optional = true }
 spl-token = { version = "4", features = ["no-entrypoint"], optional = true }
-spl-token-2022 = { version = "3", features = ["no-entrypoint"], optional = true }
-spl-token-group-interface = { version = "0.2.3", optional = true }
+spl-token-2022 = { version = "1.0.0", features = ["no-entrypoint"], optional = true }
+spl-token-group-interface = { version = "0.2.0", optional = true }
 spl-token-metadata-interface = { version = "0.3.3", optional = true }
-spl-pod = { version = "0.2.2", optional = true }
+spl-pod = { version = "0.1.0", optional = true }
